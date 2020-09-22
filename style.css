@@ -58,8 +58,44 @@ body {
     width: 100%;
 }
 
+
 .form-control i {
     position: absolute;
     top: 40px;
     right: 10px;
+    visibility: hidden;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form button {
+    background-color: white;
+    border: 2px solid white; 
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100;
 }
