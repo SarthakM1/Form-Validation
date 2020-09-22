@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: blueviolet;
+    background-color: tomato;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -25,5 +25,41 @@ body {
 
 .header {
     background-color: #f7f7f7;
-    
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20 px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: black;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
 }
