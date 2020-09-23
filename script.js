@@ -22,6 +22,10 @@ if(usernameValue === '') {
 } else {
     setSuccessFor(username);
 }
+
+if(emailValue === '') {
+    setErrorFor(email, 'Email cannot be blank');
+}
 }
 
 function setErrorFor(input, message) {
@@ -29,4 +33,11 @@ function setErrorFor(input, message) {
     const small = formControl.querySelector('small');
 
     small.innerText = message;
+
+    formControl.className = 'form-control error';
+}
+
+function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
 }
